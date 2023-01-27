@@ -1,0 +1,457 @@
+.banner_container {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background-image: url("/img/camaras_agos_digital.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: screen;
+    background-color: var(--negro);
+}
+
+.banner_container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #23232356;
+}
+
+
+.banner_container h1 {
+    font-family: handoblack;
+    font-size: 22vw;
+    line-height: 19vw;
+    letter-spacing: -5px;
+    overflow: hidden;
+    font-weight: 900;
+    user-select: none;
+    color: var(--negro);
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    animation: weAnimationSalida 2s ease forwards;
+    animation-delay: 3.5s;
+    padding: 0;
+}
+
+.banner_container h1 span {
+    overflow: hidden;
+    display: inline-block;
+    transform: translateX(-100vw);
+    opacity: 0;
+    transition: all 0.5s;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-family: handoblack;
+}
+
+.banner_container h1 span:nth-child(1) {
+    animation: weAnimation 1s ease forwards;
+    color: var(--amarillo);
+}
+
+.banner_container h1 span:nth-child(2) {
+    animation: weAnimation 1s ease forwards;
+    animation-delay: .5s;
+    color: var(--rojo);
+}
+
+.banner_container h1 span:nth-child(3) {
+    animation: weAnimation 1.5s ease forwards;
+    animation-delay: 1s;
+    color: var(--azul);
+}
+
+.outro {
+    opacity: 0;
+    transform: translateX(-100vw);
+    animation: outroAnimation 2.5s ease forwards;
+    animation-delay: 2s;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.videoRell {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.videoRell video {
+    width: 100%;
+    height: auto;
+}
+
+.btnScroll {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    width: 30px;
+    border: 3px solid var(--blanco);
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: enter 3s ease forwards;
+    animation-delay: 5s;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.btnScroll span {
+    width: 5px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: var(--blanco);
+    transform: translateY(-5px);
+    animation: mouse 3s ease infinite;
+    transition: all 0.5s;
+}
+
+.weDescripcions {
+    width: 100vw;
+    height: 100vh;
+    margin: 0vh auto 10vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--blanco);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 160px;
+    background-color: var(--negro);
+}
+
+.controls button {
+    border: none;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    font-family: handoblack;
+    background-color: var(--negro);
+}
+
+.controls button:nth-child(1):hover {
+    background-color: var(--amarillo);
+    color: var(--blanco);
+}
+
+
+.controls button:nth-child(2):hover {
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+
+
+.controls button:nth-child(3):hover {
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.amarillo {
+    background-color: var(--amarillo);
+}
+.rojo{
+    background-color: var(--rojo);
+}
+.azul{
+    background-color: var(--azul);
+}
+
+.deactive {
+    background-color: var(--negro);
+}
+
+.contenido {
+    width: 100%;
+    height: 100%;
+}
+
+.contenido h2 {
+    font-size: 4rem;
+    color: var(-negro);
+    text-transform: uppercase;
+    font-family: handoblack;
+    padding: 4rem 0;
+}
+
+.contenido p {
+    font-size: 1.2rem;
+    color: var(-negro);
+    direction: rtl;
+    text-align: justify;
+    padding-left: 15px;
+}
+
+.diapositiva {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 80%;
+    width: 100%;
+    transition: all 0.5s ease;
+    text-align: right;
+    margin: 0 6vw 0 0;
+}
+
+.diapositiva:nth-child(1) h2{
+    background-image: url("/img/wethink_vertical.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--blanco);
+}
+
+.diapositiva:nth-child(2) h2 {
+    background-image: url("/img/wedo_vertical.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--blanco);
+}
+
+.diapositiva:nth-child(3) h2{
+    background-image: url("/img/wedeliver.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--blanco);
+}
+
+.active {
+    display: flex;
+}
+
+.deactive {
+    display: none;
+}
+
+
+@keyframes weAnimation {
+    0% {
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+}
+
+@keyframes weAnimationSalida {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    90% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+
+    100% {
+        position: absolute;
+        top: -100vh;
+        transform: translateY(-100vh);
+    }
+}
+
+/*Animaicones*/
+@keyframes outroAnimation {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        display: block;
+    }
+}
+
+@keyframes enter {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes mouse {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+/*Responsive desktop*/
+@media (min-width: 768px) {
+    .banner_container {
+        padding: 0 0 0 5rem;
+        max-height: 100vh;
+    }
+
+    .banner_container h1 {
+        font-size: 10rem;
+        line-height: 8.2rem;
+        text-align: left;
+        padding: 10px 0px 10px 40px;
+    }
+
+    .outro {
+        overflow: hidden;
+    }
+
+    .outro svg {
+        width: 90% !important;
+    }
+
+    .videoRell video {
+        width: 100%;
+        height: auto;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .btnScroll {
+        position: absolute;
+        left: 50%;
+        bottom: -100px;
+        transform: translateX(-50%);
+        width: 30px;
+        border: 3px solid var(--blanco);
+        height: 50px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: enter 3s ease forwards;
+        animation-delay: 5s;
+        transition: all 0.5s;
+        opacity: 0;
+    }
+
+    .btnScroll span {
+        width: 5px;
+        height: 15px;
+        border-radius: 15px;
+        background-color: var(--blanco);
+        transform: translateY(-5px);
+        animation: mouse 3s ease infinite;
+        animation-delay: 1s;
+        transition: all 0.5s;
+        z-index: 50;
+    }
+
+    .weDescripcions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        background-color: var(--blanco);
+        margin: 10vh 0 10vh 6vw;
+    }
+
+    .controls {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        width: 150px;
+    }
+
+    .controls button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .diapositiva {
+        padding: 0 10vw 0 0;
+    }
+
+    .contenido h2 {
+        font-size: 6rem;
+        padding: 5rem 3rem 5rem 0;    
+    }
+
+    .contenido p {
+        font-size: 1.2rem;
+        text-align: justify;
+        padding: 0 0 0 6rem;
+        max-width: 700px;
+        direction: rtl;
+    }
+
+    .diapositiva:nth-child(1) h2 {
+        background-image: url("/img/wethink.png");
+        background-size: 120%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .diapositiva:nth-child(2) h2{
+        background-image: url("/img/wedo.png");
+        background-size: 120%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .diapositiva:nth-child(3) h2{
+        background-image: url("/img/wedeliver.png");
+        background-size: 120%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.brunel{
+    font-family: brunel;
+    font-weight: 900;
+}

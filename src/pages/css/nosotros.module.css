@@ -1,0 +1,58 @@
+.nosotros_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url("/img/aboutus.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    gap: 3rem;
+    mix-blend-mode: multiply;
+}
+
+.nosotros_container::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 30, 30, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nosotros_container h1 {
+    color: var(--blanco);
+    z-index: 3;
+    font-size: 3rem;
+    font-family: handoblack;
+    text-align: center;
+}
+
+.nosotros_container p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    color: var(--blanco);
+    z-index: 3;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+    font-family: hando;
+    font-weight: 100;
+}
+
+
+@media (min-width: 768px) {
+    .nosotros_container p {
+        font-size: 1.5rem;
+    }
+
+    .nosotros_container h1 {
+        font-size: 5rem;
+    }
+
+}

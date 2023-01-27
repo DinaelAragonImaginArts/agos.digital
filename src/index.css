@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "hando";
+  src: url("/fonts/hando.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "brunel";
+  src: url("/fonts/brunel.woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "handoblack";
+  src: url("/fonts/handoblack.otf");
+  font-display: swap;
+}
+
+:root {
+  --amarillo: #f2b705;
+  --rojo: #d9042b;
+  --azul: #049dd9;
+  --negro: #232323;
+  --blanco: #fdfdfd;
+  --gris: #4f4f4f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  color: var(--negro);
+  font-family: hando;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: scroll 0.5s;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-public {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-container {
+  height: 10vh;
+  z-index: 60;
+  width: 100%;
+  position: fixed;
+}
+
+.contenido {
+  width: 100%;
+  
+}
+
+.footer-container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  background-color: #f2b705;
+  padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .content-public {
+    flex-direction: row;
+  }
+
+  .header-container {
+    width: 6vw;
+    height: 100vh;
+    z-index: 60;
+  }
+
+  .contenido {
+    width: 99vw;
+    margin: 0 auto 0 0;
+    min-height: 100vh;
+  }
+
+  .footer-container {
+    width: 50px;
+    height: 100vh;
+    z-index: 60;
+    position: fixed;
+    right: 0;
+    overflow: hidden;
+  }
+}
+
+.alerta-error {
+  background-color: var(--rojo);
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  color: var(--blanco);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
