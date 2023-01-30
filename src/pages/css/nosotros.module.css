@@ -39,7 +39,7 @@
     z-index: 3;
     letter-spacing: 1px;
     margin: 0 auto;
-    text-align: center;
+    text-align: justify;
     padding: 0 20px;
     font-family: hando;
     font-weight: 100;
@@ -49,6 +49,7 @@
 @media (min-width: 768px) {
     .nosotros_container p {
         font-size: 1.5rem;
+        text-align: justify;
     }
 
     .nosotros_container h1 {

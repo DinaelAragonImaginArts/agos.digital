@@ -7,23 +7,27 @@ const VideoDesk = () => {
 
     function handlePlay() {
         videoRef.current.play();
+        videoRef.current.muted = false;
     }
+
+    function handlePause() {
+        videoRef.current.pause();
+        videoRef.current.muted = true;
+    }
+
     useEffect(() => {
         if (active) {
             handlePlay();
+        } else if (!active) {
+            handlePause();
         }
-    }, [active])
-
-    window.addEventListener('wheel', ()=>{
-        if (window.pageYOffset === 500) {
-            setActive(true)
-        }
-    })
-
+    }, [active]);
 
     return (
         <>
-            <video ref={videoRef} src='/agos_min.mp4' muted  controls></video>
+            <div  onPointerEnter={() => setActive(true)} onPointerLeave={() => setActive(false)} className='videoContainerAction'>
+                <video ref={videoRef} src='/agos_min.mp4' muted ></video>
+            </div>
         </>
     )
 }
