@@ -122,7 +122,7 @@
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
-    padding: 0;
+    padding:0;
 }
 .menubar.active .navegacion{
     left: 0;
@@ -133,7 +133,7 @@
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: -0.2rem;
-    font-size: 3rem;
+    font-size: 12vw;
     width: auto;
     padding: 0 2rem;
     transition: all 0.3s;

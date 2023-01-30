@@ -14,7 +14,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-   
     padding: 30px 0;
     border-radius: 15px;
 }
@@ -62,12 +61,11 @@
 
     .card_blog {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        max-width: 1000px;
+        max-width: 80vw;
         padding: 20px;
-
-        border-radius: 1rem;
+        gap: 3vw;
     }
 
     .card_blog:nth-child(even) {
@@ -75,12 +73,11 @@
     }
 
     .card_blog img {
-        max-width: 480px;
-        border-radius: 15px;
+        max-width: 35vw;
     }
 
     .texto {
-        max-width: 450px;
+        max-width: 30vw;
     }
     .texto h2{
         text-align: justify;

@@ -34,10 +34,7 @@
   font-family: hando;
 }
 
-html {
-  scroll-behavior: smooth;
-  transition: scroll 0.5s;
-}
+
 
 body::-webkit-scrollbar {
   width: 0px;
@@ -58,7 +55,7 @@ a {
   height: 10vh;
   z-index: 60;
   width: 100%;
-  position: fixed;
+  position: absolute;
 }
 
 .contenido {
@@ -84,7 +81,8 @@ a {
   .header-container {
     width: 6vw;
     height: 100vh;
-    z-index: 60;
+    z-index: 60; 
+    position: fixed;
   }
 
   .contenido {
@@ -113,4 +111,13 @@ a {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.videoContainerAction{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--negro);
 }

@@ -3,8 +3,9 @@ export const posts = [
         id: 1,
         titulo: "¿Qué es UGC?",
         subtitulo: 'Conoce las mejores estrategias para aprovechar el User Generated Content, y adéntrate en la era del contenido que sí funciona.',
-        autor: 'Dinael Aragon',
-        autor_imagen: '/dinael.png',
+        autor: 'Paula Vázquez',
+        autor_imagen: '/blog/profile.jpg',
+        img: '/blog/UGC_1.png',
         texto: `El contenido generado por el usuario (UGC, por las siglas en inglés de User Generated Content) es cualquier tipo de contenido creado y compartido por los usuarios de un sitio web, servicio o plataforma digital. Este contenido se distingue de aquel elaborado por los creadores o editores oficiales del sitio web o servicio. El UGC puede tomar muchas formas, incluidos texto, imágenes, videos y grabaciones de audio. El UGC generalmente se encuentra en plataformas de redes sociales, foros y otras comunidades en línea, pero también puede estar presente en sitios web de noticias, blogs y otros tipos de contenido en línea.
 
 Uno de los beneficios clave del UGC es que permite a los usuarios expresarse y compartir sus perspectivas de una manera que no es posible a través de los medios tradicionales. Esto puede conducir a una experiencia en línea más diversa y dinámica, así como a una mayor participación y desarrollo de la comunidad.
@@ -15,14 +16,14 @@ Sin embargo, también hay desventajas potenciales para el UGC. Una de las mayore
         
 En general, el UGC puede ser una herramienta poderosa para crear comunidades en línea e interactuar con los usuarios, pero es importante ser consciente de los riesgos potenciales y tener un plan para moderar y administrar el contenido que se comparte. Esto puede incluir el desarrollo de pautas y filtros para el contenido generado por el usuario, la implementación de herramientas de moderación y la capacitación del personal para manejar y responder a cualquier problema que pueda surgir.
         `,
-        img: '/blog/UGC_1.webp',
     },
     {
         id: 2,
         titulo: "Creadores de UGC y tipos de contenido",
         subtitulo: 'Cualquier usuario puede ser creador de contenido, pero no cualquier proyecto puede transformar estos contenidos en campañas exitosas. Descubre los formatos y métodos más exitosos del UGC.',
-        autor: 'Dinael Aragon',
-        autor_imagen: '/dinael.png',
+        autor: 'Paula Vázquez',
+        autor_imagen: '/blog/profile.jpg',
+        img: '/blog/UGC_2.png',
         texto: `El contenido generado por el usuario, o UGC, es creado por personas que son usuarios de un sitio web o servicio, en lugar de los creadores o editores oficiales de dicha plataforma. Estas personas pueden provenir de una amplia gama de antecedentes y tener diferentes niveles de conocimientos y experiencia. Pueden incluir clientes, fanáticos, seguidores o cualquier otra persona que esté interesada en el sitio web o el servicio y quiera compartir sus pensamientos y opiniones.
 
 Algunos ejemplos de contenido generado por el usuario incluyen:
@@ -70,6 +71,5 @@ También puede llevar mucho tiempo revisar y monitorear el contenido que se comp
         
 En general, el contenido generado por el usuario puede ser una herramienta poderosa para crear comunidades en línea e interactuar con los usuarios, pero es importante ser consciente de los riesgos potenciales y tener un plan para moderar y administrar el contenido que se comparte. Esto puede incluir el desarrollo de metodologías para la generación del UGC, la implementación de herramientas de moderación y la capacitación del personal para manejar y responder a cualquier problema que pueda surgir.        
         `,
-        img: '/blog/UGC_2.webp',
     },
 ]

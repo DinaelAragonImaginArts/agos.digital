@@ -15,7 +15,15 @@
     padding: 2rem;
     color: var(--blanco);
     font-family: handoblack;
-    margin-top: 50px;
+    margin-top: 70px;
+    background-image: url('/img/contactomobil.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .contacto_container {
@@ -129,10 +137,19 @@
 
     .titleContacto {
         text-align: center;
-        font-size: 4rem;
+        font-size: 3rem;
         padding: 2rem;
         color: var(--blanco);
         font-family: handoblack;
+        margin-top: 50px;
+        background-image: url('/img/contacto.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 250px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
     
     .contacto_rrss {
